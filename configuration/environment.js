@@ -17,17 +17,17 @@ module.exports = {
   multiCapabilities: [{
     'browserName': 'chrome',
     'version': 63,
-    'platform': 'MAC',
+    'platform': 'WINDOWS',
     'count': 1,
   }, {
     'browserName': 'firefox',
-    'version': 57,
-    'platform': 'MAC',
+    'version': 60,
+    'platform': 'WINDOWS',
     'count': 1,
   }, {
     'browserName': 'safari',
     'version': 10.1,
-    'platform': 'MAC',
+    'platform': 'WINDOWS',
     'count': 1,
   }],
 
