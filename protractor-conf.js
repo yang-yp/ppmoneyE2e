@@ -6,7 +6,6 @@ var country = require('./test-framework/core/country.js');
 var env = require('./configuration/environment.js');
 var spec = require('./specs/specs.js');
 var reporter = require('./test-framework/core/report.js');
-var AllureProperties = require('beat-report').AllureProperties;
 var AllureReporter = require('jasmine-allure-reporter');
 var SpecReporter = require('jasmine-spec-reporter');
 var fs = require('fs');
@@ -64,9 +63,6 @@ exports.config = {
     global.isAngularSite = function (flag) {
       browser.ignoreSynchronization = !flag;
     };
-
-    var allureProperties = new AllureProperties();
-    allureProperties.generateProperties(env.capabilities.browserName,country.country,browser.params.baseEnv);
   },
 
   afterLaunch: function (exitCode) {

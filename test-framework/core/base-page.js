@@ -2,16 +2,16 @@
  * Created by i856279 (Isabell) on 8/9/16.
  */
 
-var Services = require('../../../e2e/configuration/services.js');
+//var Services = require('../../../e2e/configuration/services.js');
 
 var BasePage = function() {};
 var realm = browser.params.realm;
 
-BasePage.prototype = Object.create(Services);
+BasePage.prototype = Object.create(Object);
 
-BasePage.prototype.open = function(){
+/*BasePage.prototype.open = function(){
   return browser.get(this.getApiPortal());
-};
+};*/
 
 BasePage.prototype.navigateToURL = function(url){
   return browser.get(url);
