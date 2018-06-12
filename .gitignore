@@ -1,6 +1,5 @@
 /node_modules
 /.idea
-/.idea/*
 /.idea/workspace.xml
 /reports
 /allure-results
