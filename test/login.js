@@ -28,7 +28,7 @@ describe(" a case of longin secess",function (){
         };
         loginLink.click();
         expect(userName.isDisplayed()).toBe(true);
-        userName.sendKeys("18919003938")
+        userName.sendKeys("13718281997")
         done();
     });
     });
