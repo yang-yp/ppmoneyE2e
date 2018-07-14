@@ -61,4 +61,11 @@ BasePage.prototype.inputString = function (inputElement, inputString) {
   inputElement.clear().sendKeys(inputString)
 };
 
+BasePage.prototype.switchBrowserTabs = function (tabIndex) {
+  var handlePromise = browser.driver.getAllWindowHandles();
+  handlePromise.then(function (handles) {
+    browser.switchTo().window(handles[tabIndex]);
+  });
+};
+
 module.exports = BasePage;

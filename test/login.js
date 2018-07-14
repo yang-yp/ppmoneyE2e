@@ -17,6 +17,7 @@ describe(" a case of longin secess",function (){
     var ppMoneyUrl = app.ppmoneyUrl;
     var userName = app.userName;
     var userPwd = app.userPwd;
+    var userNum = app.userNum;
 
     beforeAll(function(done){
         basePage.navigateToURL(ppMoneyUrl);
@@ -31,11 +32,10 @@ describe(" a case of longin secess",function (){
         homePage.userNameBox.sendKeys(userName);
         homePage.passWordBox.sendKeys(userPwd);
         homePage.logInBtn.click();
-        //expect(homePage.loginOkLable.valueOf('注册号：1077513746487'));
-        expect(homePage.loginOkLable.
+        expect(homePage.loginOkLable.getText()).toContain(userNum);
         homePage.logOutBtn.click();
         done();
-    });
+});
     //PP-2
     it("use incorrect user",function(done){
         homePage.loginLink.click();
@@ -43,7 +43,7 @@ describe(" a case of longin secess",function (){
         homePage.passWordBox.sendKeys(userPwd);
         homePage.logInBtn.click();
         //expect(loginOk.isDisplayed()).toBe(true);
-        expect(homePage.loginWarMsg.valueOf('帐号密码不匹配'));
+        expect(homePage.loginWarMsg.getText()).toEqual('帐号密码不匹配');
         done();
     });
     //PP-3
@@ -52,7 +52,7 @@ describe(" a case of longin secess",function (){
         homePage.userNameBox.sendKeys(userName);
         homePage.passWordBox.sendKeys("ppmoney110");
         homePage.logInBtn.click();
-        expect(homePage.loginWarMsg.valueOf('帐号密码不匹配'));
+        expect(homePage.loginWarMsg.getText()).toEqual('帐号密码不匹配');
         done();
     });
 });

@@ -6,5 +6,5 @@ module.exports = {
   ppmoneyUrl:"https://www.ppmoney.com/",
   userName: "13718281997",
   userPwd:"ppmoney123",
-  userNum:"注册号：1077513746487"
+  userNum:"1077513746487"
 };
