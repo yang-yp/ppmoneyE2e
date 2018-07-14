@@ -17,6 +17,7 @@ HomePage.prototype.homePageLink =element(by.css('ul.nav-c.cf > li.item.item-01.a
 HomePage.prototype.moneyLable =element(by.css('div.login-box-bd > div.user-data.cf > div.data-box.fl > label'));
 HomePage.prototype.goMyAccountBtn =element(by.css('div#enLogin.login-box > div.login-box-bd >  a.pp-btn.btn-reg'));
 HomePage.prototype.rechargeLink =element(by.partialLinkText('去充值>'));
-HomePage.prototype.openAccountBtn =element(by.id('btnRegAccount'));
+HomePage.prototype.openAccountBtn =element(by.css('div#btnRegAccount.pp-btn.btn-register'));
+//HomePage.prototype.closePopup = element(by.id('popbtn'));
 
 module.exports = HomePage;

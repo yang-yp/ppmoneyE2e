@@ -27,20 +27,17 @@ describe(" a case of longin secess",function (){
     });
     //PP-1
     it("user login success",function(done){
-        var closePopup = element(by.id('popbtn'));
-        if (EC.visibilityOf(closePopup)){
-            closePopup.click();
-        };
         homePage.loginLink.click();
         homePage.userNameBox.sendKeys(userName);
         homePage.passWordBox.sendKeys(userPwd);
         homePage.logInBtn.click();
-        expect(homePage.loginOkLable.valueOf('注册号：1077513746487'));
+        //expect(homePage.loginOkLable.valueOf('注册号：1077513746487'));
+        expect(homePage.loginOkLable.
         homePage.logOutBtn.click();
         done();
     });
     //PP-2
-    it("user incorrect user",function(done){
+    it("use incorrect user",function(done){
         homePage.loginLink.click();
         homePage.userNameBox.sendKeys("13718281991");
         homePage.passWordBox.sendKeys(userPwd);
@@ -50,7 +47,7 @@ describe(" a case of longin secess",function (){
         done();
     });
     //PP-3
-    it("user incorrect password",function(done){
+    it("use incorrect password",function(done){
         homePage.loginLink.click();
         homePage.userNameBox.sendKeys(userName);
         homePage.passWordBox.sendKeys("ppmoney110");

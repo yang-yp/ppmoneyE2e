@@ -1,11 +1,11 @@
 /**
- * created by Yyp on 2018/6/14
- * case coverage:PP-4,PP-5,PP-6
+ * created by Yyp on 2018/7/12
+ * case coverage:PP-7
  * Pre-step :user have longin
  * Test flow:
- * 1,on my account page click the 首页 button
- * 2,on the home page click the 进入我的账户
- * 3,on the home page click the 去充值
+ * 1,on[开通存管账户] page 输入：真实姓名,证件类型,证件号码,储蓄卡卡号,银行预留手机号
+ * 2,click[支持银行],close[银行列表]page
+ * 3,click[下一步]，进入[验证]page
  */
 var EC = protractor.ExpectedConditions;
 var BasePage =require('../test-framework/core/base-page.js');
@@ -21,9 +21,9 @@ describe("Verify global navigation of PPmoney",function (){
 
     beforeAll(function(done){
         basePage.navigateToURL(ppMoneyUrl);
-/*        if (EC.visibilityOf(homePage.closePopup)){
-            homePage.closePopup.click();
-        };*/
+        /*        if (EC.visibilityOf(homePage.closePopup)){
+                    homePage.closePopup.click();
+                };*/
         homePage.loginLink.click();
         homePage.userNameBox.sendKeys(userName);
         homePage.passWordBox.sendKeys(userPwd);
@@ -51,9 +51,6 @@ describe("Verify global navigation of PPmoney",function (){
         homePage.homePageLink.click();
         homePage.sleep();
         homePage.rechargeLink.click();
-        homePage.sleep();
-        homePage.sleep();
-        homePage.sleep();
         expect(homePage.openAccountBtn.isDisplayed).toBe(true);
         homePage.openAccountBtn.click();
         done();
