@@ -20,16 +20,11 @@ describe("Verify global navigation of PPmoney",function (){
     var userPwd = app.userPwd;
 
     beforeAll(function(done){
-        var closePopup = element(by.id('popbtn'));
-
         basePage.navigateToURL(ppMoneyUrl);
         homePage.loginLink.click();
         homePage.userNameBox.sendKeys(userName);
         homePage.passWordBox.sendKeys(userPwd);
         homePage.logInBtn.click();
-        if (EC.visibilityOf(closePopup)){
-            closePopup.click();
-        };
         done();
     });
     afterAll(function(done){
@@ -45,15 +40,18 @@ describe("Verify global navigation of PPmoney",function (){
     //PP-5
     it("verify user can access the myAccount page",function(done){
         homePage.goMyAccountBtn.click();
+        homePage.switchBrowserTabs(1);
         expect(homePage.loginOkLable.valueOf('注册号：1077513746487'));
         done();
     });
     //PP-6
     it("verify user can access the recharge page",function(done){
         homePage.homePageLink.click();
+        homePage.sleep();
         homePage.rechargeLink.click();
-        expect(homePage.openAccountBtn.isDisplayed).toBe(true);
+        homePage.switchBrowserTabs(2);
+        expect(homePage.openAccountBtn.isDisplayed()).toBe(true);
         homePage.openAccountBtn.click();
         done();
-    });g
+    });
 });
