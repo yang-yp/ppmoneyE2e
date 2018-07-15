@@ -42,7 +42,6 @@ describe(" a case of longin secess",function (){
         homePage.userNameBox.sendKeys("13718281991");
         homePage.passWordBox.sendKeys(userPwd);
         homePage.logInBtn.click();
-        //expect(loginOk.isDisplayed()).toBe(true);
         expect(homePage.loginWarMsg.getText()).toEqual('帐号密码不匹配');
         done();
     });

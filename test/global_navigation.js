@@ -18,12 +18,14 @@ describe("Verify global navigation of PPmoney",function (){
     var ppMoneyUrl = app.ppmoneyUrl;
     var userName = app.userName;
     var userPwd = app.userPwd;
+    var userNum = app.userNum;
+
 
     beforeAll(function(done){
         basePage.navigateToURL(ppMoneyUrl);
-/*        if (EC.visibilityOf(homePage.closePopup)){
-            homePage.closePopup.click();
-        };*/
+        /*        if (EC.visibilityOf(homePage.closePopup)){
+                    homePage.closePopup.click();
+                };*/
         homePage.loginLink.click();
         homePage.userNameBox.sendKeys(userName);
         homePage.passWordBox.sendKeys(userPwd);
@@ -37,14 +39,14 @@ describe("Verify global navigation of PPmoney",function (){
     //PP-4
     it("verify can go to home page from the default page",function(done){
         homePage.homePageLink.click();
-        expect(homePage.moneyLable.valueOf('可用余额(元)'));
+        expect(homePage.moneyLable.getText()).toEqual('可用余额(元)');
         done();
     });
     //PP-5
     it("verify user can access the myAccount page",function(done){
         homePage.goMyAccountBtn.click();
         homePage.switchBrowserTabs(1);
-        expect(homePage.loginOkLable.valueOf('注册号：1077513746487'));
+        expect(homePage.loginOkLable.getText()).toContain(userNum);
         done();
     });
     //PP-6
