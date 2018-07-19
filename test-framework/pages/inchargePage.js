@@ -3,20 +3,26 @@
  */
 var BasePage = require('../core/base-page.js');
 var EC = protractor.ExpectedConditions;
+var timeOut = browser.params.timeOut;
 var InchargePage = function InchargePage() {};
 
 InchargePage.prototype = Object.create(BasePage.prototype);
 InchargePage.prototype.realNameBox = element(by.id('realName'));
-InchargePage.prototype.loginLink = element.all(by.css('ul#topLoginState.site-nav-r.fr > li > a' )).first();
-InchargePage.prototype.userNameBox =element(by.id('Phone'));
-InchargePage.prototype.passWordBox =element(by.id('Password'));
-InchargePage.prototype.logInBtn =element(by.id('sendLogin'));
-InchargePage.prototype.loginOkLable = element(by.css('div.face-side > p.s-num' ));
-InchargePage.prototype.logOutBtn =element(by.css('ul#topLoginState.site-nav-r.fr > li.menu.fr > a'));
-InchargePage.prototype.InchargePageLink =element(by.css('ul.nav-c.cf > li.item.item-01.active > a'));
-InchargePage.prototype.moneyLable =element(by.css('div.login-box-bd > div.user-data.cf > div.data-box.fl > label'));
-InchargePage.prototype.goMyAccountBtn =element(by.css('div#enLogin.login-box > div.login-box-bd >  a.pp-btn.btn-reg'));
-InchargePage.prototype.rechargeLink =element(by.partialLinkText('去充值>'));
-InchargePage.prototype.openAccountBtn =element(by.css('div#btnRegAccount.pp-btn.btn-register'));
+InchargePage.prototype.cardTypeSelect = element(by.css('div#cardTypeSelect.pp-select-box.form-control-box > div.dropdown-toggle' ));
+InchargePage.prototype.cardNoBox = element(by.id('idCard'));
+InchargePage.prototype.bankCardBox = element(by.id('bankCardNo'));
+InchargePage.prototype.bankPhoneBox =element(by.id('bankPhone'));
+InchargePage.prototype.bankLink = element(by.id('getsuppBank' ));
+InchargePage.prototype.supportBankDialog = element(by.css('ui-popup.ui-popup-modal.ui-popup-show.ui-popup-focus'));
+InchargePage.prototype.bankDialogCloseBtn = element(by.css('div.ui-dialog > table.ui-dialog-grid > tbody > tr > td.ui-dialog-header > button.ui-dialog-close'));
+InchargePage.prototype.nextBtn = element(by.id('openAccount'));
+InchargePage.prototype.idErrDialog = element(by.css('div.ui-popup.ui-popup-modal.ui-popup-show.ui-popup-focus > div.ui-dialog'));
+InchargePage.prototype.dialogCloseBtn = element(by.css('div.ui-popup.ui-popup-modal.ui-popup-show.ui-popup-focus > div.ui-dialog > table.ui-dialog-grid > tbody > tr > td.ui-dialog-header > ui-dialog-close'));
+
+InchargePage.prototype.navigateToRegisterPage = function() {
+    browser.wait(EC.visibilityOf(this.nextBtn), timeOut);
+    this.nextBtn.click();
+    this.sleep(100);
+};
 
 module.exports = InchargePage;

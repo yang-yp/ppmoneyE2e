@@ -46,7 +46,7 @@ describe("Verify global navigation of PPmoney",function (){
     it("verify user can access the myAccount page",function(done){
         homePage.goMyAccountBtn.click();
         homePage.switchBrowserTabs(1);
-        expect(homePage.loginOkLable.getText()).toContain(userNum);
+        expect(homePage.loginOkLable.getText()).toContain('注册');
         done();
     });
     //PP-6
