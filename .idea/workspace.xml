@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c8d9fde-9821-41d2-a949-1b250fe49f49" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/test-framework/pages/personalRegisterPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-framework/pages/bbsPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/bbs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/properties/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/properties/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-framework/pages/inchargePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-framework/pages/inchargePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/global_navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/global_navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-framework/pages/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-framework/pages/homePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/openAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/openAccount.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,23 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="binary.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/selenium-webdriver/firefox/binary.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="global_navigation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/global_navigation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1539">
-              <caret line="57" column="65" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="65" />
+            <state relative-caret-position="56">
+              <caret line="41" column="53" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -45,8 +32,8 @@
       <file leaf-file-name="openAccount.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/openAccount.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+            <state relative-caret-position="1377">
+              <caret line="51" selection-start-line="50" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -54,17 +41,17 @@
       <file leaf-file-name="base-page.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-framework/core/base-page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1836">
-              <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
+            <state relative-caret-position="1485">
+              <caret line="55" selection-start-line="55" selection-end-line="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inchargePage.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inchargePage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-framework/pages/inchargePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            <state relative-caret-position="702">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -78,29 +65,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/properties/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="report.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test-framework/core/report.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="homePage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-framework/pages/homePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" selection-start-line="5" selection-end-line="6" />
+            <state relative-caret-position="567">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="environment.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configuration/environment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="59" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -108,8 +86,26 @@
       <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+            <state relative-caret-position="570">
+              <caret line="51" selection-start-line="51" selection-end-line="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bbs.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/bbs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bbsPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-framework/pages/bbsPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -124,14 +120,15 @@
       <find>CreateAppPage</find>
       <find>homePgae</find>
       <find>closePopup</find>
-      <find>HomePage</find>
       <find>InchargePage</find>
+      <find>HomePage</find>
     </findStrings>
     <replaceStrings>
       <replace>HomePage</replace>
       <replace>homePage</replace>
       <replace>InchargePage</replace>
       <replace>personalRegisterPage</replace>
+      <replace>BbsPage</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -140,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/configuration/environment.js" />
         <option value="$PROJECT_DIR$/test-framework/core/report.js" />
         <option value="$PROJECT_DIR$/test-framework/core/country.js" />
         <option value="$PROJECT_DIR$/protractor-conf.js" />
@@ -153,12 +149,15 @@
         <option value="$PROJECT_DIR$/test/firstpage.js" />
         <option value="$PROJECT_DIR$/test/login.js" />
         <option value="$PROJECT_DIR$/test/actionOnHomepage.js" />
-        <option value="$PROJECT_DIR$/test-framework/pages/homePage.js" />
         <option value="$PROJECT_DIR$/test/global_navigation.js" />
         <option value="$PROJECT_DIR$/properties/application.js" />
-        <option value="$PROJECT_DIR$/test/openAccount.js" />
         <option value="$PROJECT_DIR$/test-framework/pages/personalRegisterPage.js" />
         <option value="$PROJECT_DIR$/test-framework/pages/inchargePage.js" />
+        <option value="$PROJECT_DIR$/test/openAccount.js" />
+        <option value="$PROJECT_DIR$/configuration/environment.js" />
+        <option value="$PROJECT_DIR$/test-framework/pages/homePage.js" />
+        <option value="$PROJECT_DIR$/test-framework/pages/bbsPage.js" />
+        <option value="$PROJECT_DIR$/test/bbs.js" />
       </list>
     </option>
   </component>
@@ -193,6 +192,11 @@
             <path>
               <item name="ppmoneyE2e" type="b2602c69:ProjectViewProjectNode" />
               <item name="ppmoneyE2e" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ppmoneyE2e" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ppmoneyE2e" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ppmoneyE2e" type="b2602c69:ProjectViewProjectNode" />
@@ -237,8 +241,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\2018531\ppmoneyE2e\properties" />
+      <recent name="D:\2018531\ppmoneyE2e\test-framework\pages" />
       <recent name="D:\2018531\ppmoneyE2e\test" />
+      <recent name="D:\2018531\ppmoneyE2e\properties" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -306,12 +311,15 @@
       <workItem from="1531492464993" duration="15726000" />
       <workItem from="1531839616355" duration="687000" />
       <workItem from="1531924632462" duration="5485000" />
-      <workItem from="1532005919564" duration="7808000" />
+      <workItem from="1532005919564" duration="8573000" />
+      <workItem from="1532088864484" duration="6854000" />
+      <workItem from="1532247197532" duration="8875000" />
+      <workItem from="1532274574754" duration="786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129539000" />
+    <option name="totallyTimeSpent" value="146819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
@@ -350,20 +358,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protractor-conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-framework/core/country.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
@@ -490,20 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protractor-conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1158">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/environment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specs/specs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -569,56 +549,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-framework/core/base-page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/actionOnHomepage.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/selenium-webdriver/firefox/binary.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/global_navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
-          <caret line="57" column="65" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/properties/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="243">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protractor-conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration/environment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="59" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/openAccount.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+        <state relative-caret-position="1377">
+          <caret line="51" selection-start-line="50" selection-end-line="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-framework/pages/homePage.js">
+    <entry file="file://$PROJECT_DIR$/test-framework/pages/inchargePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" selection-start-line="5" selection-end-line="6" />
+        <state relative-caret-position="702">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -629,10 +599,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-framework/pages/inchargePage.js">
+    <entry file="file://$PROJECT_DIR$/test-framework/pages/homePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="567">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-framework/core/base-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="55" selection-start-line="55" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-framework/pages/bbsPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="51" selection-start-line="51" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/global_navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="41" column="53" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/bbs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
         </state>
       </provider>
     </entry>

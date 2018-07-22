@@ -41,9 +41,10 @@ describe("Verify user can open account using ID card and can't open using wrong 
         homePage.homePageLink.click();
         homePage.sleep();
         homePage.rechargeLink.click();
-        homePage.switchBrowserTabs(2);
+        homePage.switchBrowserTabs();
         expect(homePage.openAccountBtn.isDisplayed()).toBe(true);
         homePage.openAccountBtn.click();
+        homePage.sleep();
         done();
     });
     afterAll(function(done){
