@@ -34,12 +34,14 @@ describe(" a case of longin secess",function (){
     //PP-8
     it("user ",function(done){
         homePage.bbsBtn.click();
+        homePage.sleep();
         homePage.switchBrowserTabs(1);
         bbsPage.shareBtn.click();
+        bbsPage.sleep();
         homePage.switchBrowserTabs(2);
         bbsPage.newSpecialBtn.click();
         bbsPage.bbsTitleInput.sendKeys("1to1");
-        bbsPage.bbsBodyInput.sendKeys("11111111");
+        bbsPage.bbsInput.sendKeys("11111111");
         bbsPage.bbsSubmitBtn.click();
         expect(bbsPage.bbsVerifyTitle.getText()).toEqual("1to1");
         done();

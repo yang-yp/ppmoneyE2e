@@ -19,7 +19,7 @@ HomePage.prototype.moneyLable = element(by.css('div.login-box-bd > div.user-data
 HomePage.prototype.goMyAccountBtn = element(by.css('div#enLogin.login-box > div.login-box-bd >  a.pp-btn.btn-reg'));
 HomePage.prototype.rechargeLink = element(by.partialLinkText('去充值'));
 HomePage.prototype.openAccountBtn = element(by.id('btnRegAccount'));
-HomePage.prototype.bbsBtn = element(by.css('div#g-nav-bar.g-nav-bar.cf > div.g-nav >ul.nav-c.cf > li.item item-01 g-forum fr> a'));
+HomePage.prototype.bbsBtn = element(by.css('div#g-nav-bar.g-nav-bar.cf > div.g-nav >ul.nav-c.cf > li.item.item-01.g-forum.fr > a'));
 
 HomePage.prototype.clickRechargeBtn = function () {
     this.sleep();
