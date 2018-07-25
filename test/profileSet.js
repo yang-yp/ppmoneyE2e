@@ -1,6 +1,6 @@
 /**
  * created by Yyp on 2018/6/22
- * case coverage:PP-9,pp-10
+ * case coverage:pp-10
  * Pre-step :login
  * Test flow:
  * 1,on the homePage click bbs then go to the 交流分享
@@ -32,19 +32,29 @@ describe(" a case of longin secess",function (){
         done();
     });
     //PP-9
-    it("user write bbs sucess",function(done){
+    it("update profile sucess ",function(done){
         homePage.bbsBtn.click();
         homePage.sleep();
         homePage.switchBrowserTabs(1);
-        bbsPage.shareBtn.click();
+        bbsPage.configBtn.click();
         bbsPage.sleep();
-        homePage.switchBrowserTabs(2);
-        bbsPage.newSpecialBtn.click();
-        bbsPage.bbsTitleInput.sendKeys("1to1");
-        bbsPage.bbsInput.sendKeys("11111111");
-        bbsPage.bbsSubmitBtn.click();
-        expect(bbsPage.bbsVerifyTitle.getText()).toEqual("1to1");
+        bbsPage.realNameInput.clear();
+        bbsPage.realNameInput.sendKeys("高飞飞");
+        bbsPage.sexSelect.$('[value="1"]').click();
+        if (EC.visibilityOf(bbsPage.birthModifyBtn)){
+            bbsPage.birthModifyBtn.click();
+        }else{
+            bbsPage.provinceSelect.$('[value="北京市"]').click();
+        };
+
+        bbsPage.proSubmitBtn.click();
+        bbsPage.sleep();
+        bbsPage.sleep();
+        bbsPage.eduTable.click();
+        bbsPage.graduateSchoolInput.clear();
+        bbsPage.graduateSchoolInput.sendKeys("工商管理学院");
+        bbsPage.educationSelect.$('[value="硕士"]').click();
+        bbsPage.proSubmitBtn.click();
         done();
      });
-
 });
