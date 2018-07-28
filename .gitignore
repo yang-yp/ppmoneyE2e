@@ -3,3 +3,7 @@
 /.idea/workspace.xml
 /reports
 /allure-results
+.idea/workspace.xml
+*.xml
+
+.idea/workspace.xml

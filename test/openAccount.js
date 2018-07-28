@@ -28,6 +28,7 @@ describe("Verify user can open account using ID card and can't open using wrong 
     var cardNoErr = app.cardNoErr;
     var bankCardNo = app.bankCardNo;
     var telNo = app.telNo;
+    var timeout = browser.params.timeOut;
 
     beforeAll(function(done){
         basePage.navigateToURL(ppMoneyUrl);
@@ -38,23 +39,29 @@ describe("Verify user can open account using ID card and can't open using wrong 
         homePage.userNameBox.sendKeys(userName);
         homePage.passWordBox.sendKeys(userPwd);
         homePage.logInBtn.click();
-        homePage.homePageLink.click();
-        homePage.sleep();
-        homePage.rechargeLink.click();
-        homePage.switchBrowserTabs();
-        expect(homePage.openAccountBtn.isDisplayed()).toBe(true);
-        homePage.openAccountBtn.click();
-        homePage.sleep();
         done();
     });
     afterAll(function(done){
         homePage.logOutBtn.click();
         done();
     });
+
+    it('get into recharge page', function (done) {
+        browser.wait(EC.elementToBeClickable(homePage.homePageLink), timeout);
+        homePage.homePageLink.click();
+        homePage.sleep();
+        homePage.rechargeLink.click();
+        homePage.switchBrowserTabs(1);
+        expect(homePage.openAccountBtn.isDisplayed()).toBe(true);
+        homePage.openAccountBtn.click();
+        done();
+    });
+
     //PP-7
     it("verify user can open account using ID card",function(done){
+        browser.wait(EC.visibilityOf(inchargePage.realNameBox), timeout);
         inchargePage.realNameBox.sendKeys(realName);
-        inchargePage.cardTypeSelect.$('[value="身份证"]').click();
+        inchargePage.selectCredentialsType("港澳台通行证");
         inchargePage.cardNoBox.sendKeys(cardNo);
         inchargePage.bankLink.click();
         expect(inchargePage.supportBankDialog.isDisplayed()).toBe(true);
