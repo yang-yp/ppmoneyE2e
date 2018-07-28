@@ -1,10 +1,11 @@
 /**
- * created by Yyp on 2018/6/22
+ * created by Yyp on 2018/7/25
  * case coverage:pp-10
  * Pre-step :login
  * Test flow:
- * 1,on the homePage click bbs then go to the 交流分享
- * 2,write a new
+ * 1,on the bbsPage click 设置
+ * 2,on the 基本 tab input the name and  province then submit
+ * 3,on the 教育情况 tab input the graduate School and  education then submit
  */
 var EC = protractor.ExpectedConditions;
 var BasePage =require('../test-framework/core/base-page.js');
@@ -31,7 +32,7 @@ describe(" a case of longin secess",function (){
     afterAll(function(done){
         done();
     });
-    //PP-9
+    //PP-10
     it("update profile sucess ",function(done){
         homePage.bbsBtn.click();
         homePage.sleep();
