@@ -62,6 +62,7 @@ BasePage.prototype.inputString = function (inputElement, inputString) {
 };
 
 BasePage.prototype.switchBrowserTabs = function (tabIndex) {
+  var tabIndex = tabIndex || '1';
   var handlePromise = browser.driver.getAllWindowHandles();
   handlePromise.then(function (handles) {
     browser.switchTo().window(handles[tabIndex]);
