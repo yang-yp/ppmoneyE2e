@@ -26,6 +26,9 @@ describe(" a case of longin secess",function (){
 
     beforeAll(function(done){
         basePage.navigateToURL(ppMoneyUrl);
+        if (EC.visibilityOf(homePage.closePopup)){
+                   homePage.closePopup.click();
+               };
         if (EC.visibilityOf(homePage.loginLink)){
             homePage.loginLink.click();
         };
