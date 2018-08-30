@@ -36,9 +36,7 @@ describe("Verify user can open account using ID card and can't open using wrong 
                     homePage.closePopup.click();
                 };*/
         homePage.loginLink.click();
-        homePage.userNameBox.sendKeys(userName);
-        homePage.passWordBox.sendKeys(userPwd);
-        homePage.logInBtn.click();
+        homePage.loginHomePage(userName,userPwd);
         done();
     });
     afterAll(function(done){
@@ -61,7 +59,7 @@ describe("Verify user can open account using ID card and can't open using wrong 
     it("verify user can open account using ID card",function(done){
         browser.wait(EC.visibilityOf(inchargePage.realNameBox), timeout);
         inchargePage.realNameBox.sendKeys(realName);
-        inchargePage.selectCredentialsType("港澳台通行证");
+        inchargePage.selectCredentialsType("身份证");
         inchargePage.cardNoBox.sendKeys(cardNo);
         inchargePage.bankLink.click();
         expect(inchargePage.supportBankDialog.isDisplayed()).toBe(true);
@@ -69,13 +67,13 @@ describe("Verify user can open account using ID card and can't open using wrong 
         inchargePage.bankCardBox.sendKeys(bankCardNo);
         inchargePage.bankPhoneBox.sendKeys(telNo);
         inchargePage.navigateToRegisterPage();
-        expect(inchargePage.supportBankDialog.isDisplayed()).toBe(true);
+        expect(personalRegisterPage.registerBtn.isDisplayed()).toBe(true);
         done();
     });
     //PP-8
     it("verify user can't open account using wrong ID card",function(done){
         inchargePage.realNameBox.sendKeys(realName);
-        inchargePage.cardTypeSelect.$('[value="身份证"]').click();
+        inchargePage.selectCredentialsType("身份证");
         inchargePage.cardNoBox.sendKeys(cardNoErr);
         inchargePage.bankCardBox.sendKeys(bankCardNo);
         inchargePage.bankPhoneBox.sendKeys(telNo);

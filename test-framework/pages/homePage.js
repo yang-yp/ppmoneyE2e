@@ -20,11 +20,20 @@ HomePage.prototype.goMyAccountBtn = element(by.css('div#enLogin.login-box > div.
 HomePage.prototype.rechargeLink = element(by.partialLinkText('去充值'));
 HomePage.prototype.openAccountBtn = element(by.id('btnRegAccount'));
 HomePage.prototype.bbsBtn = element(by.css('div#g-nav-bar.g-nav-bar.cf > div.g-nav >ul.nav-c.cf > li.item.item-01.g-forum.fr > a'));
+HomePage.prototype.messageBtn = element(by.css('ul#topLoginState.site-nav-r.fr > li >a.message'));
+
 
 HomePage.prototype.clickRechargeBtn = function () {
     this.sleep();
     browser.wait(EC.elementToBeClickable(this.rechargeLink), timeOut);
     this.rechargeLink.click();
+};
+
+HomePage.prototype.loginHomePage = function (userName,passWord) {
+    browser.wait(EC.visibilityOf(this.userNameBox), timeOut);
+    this.userNameBox.sendKeys(userName);
+    this.passWordBox.sendKeys(passWord);
+    this.logInBtn.click();
 };
 
 module.exports = HomePage;

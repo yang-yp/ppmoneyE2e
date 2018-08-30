@@ -3,8 +3,13 @@
  */
 
 module.exports={
-    specs: "test/login.js",
+    specs: "test/messageCenter.js",
     suites:{
-        all:["test/*.js"]
+        all:["test/*.js"],
+        selected:[
+            'test/profileSet.js',
+            'test/openAccount.js',
+            'test/login.js'
+        ]
     }
 }

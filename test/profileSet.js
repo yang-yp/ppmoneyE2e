@@ -12,6 +12,7 @@ var BasePage =require('../test-framework/core/base-page.js');
 var HomePage =require('../test-framework/pages/homePage.js');
 var BbsPage =require('../test-framework/pages/bbsPage.js');
 var app = require('../properties/application.js');
+var timeOut = browser.params.timeOut;
 
 describe(" a case of longin secess",function (){
     var basePage = new BasePage();
@@ -24,9 +25,7 @@ describe(" a case of longin secess",function (){
     beforeAll(function(done){
         basePage.navigateToURL(ppMoneyUrl);
         homePage.loginLink.click();
-        homePage.userNameBox.sendKeys(userName);
-        homePage.passWordBox.sendKeys(userPwd);
-        homePage.logInBtn.click();
+        homePage.loginHomePage(userName,userPwd);
         done();
     });
     afterAll(function(done){
@@ -38,7 +37,7 @@ describe(" a case of longin secess",function (){
         homePage.sleep();
         homePage.switchBrowserTabs(1);
         bbsPage.configBtn.click();
-        bbsPage.sleep();
+        browser.wait(EC.visibilityOf(bbsPage.realNameInput), timeOut);
         bbsPage.realNameInput.clear();
         bbsPage.realNameInput.sendKeys("高飞飞");
         bbsPage.sexSelect.$('[value="1"]').click();
@@ -49,8 +48,7 @@ describe(" a case of longin secess",function (){
         };
 
         bbsPage.proSubmitBtn.click();
-        bbsPage.sleep();
-        bbsPage.sleep();
+        browser.wait(EC.elementToBeClickable(bbsPage.eduTable), timeOut);
         bbsPage.eduTable.click();
         bbsPage.graduateSchoolInput.clear();
         bbsPage.graduateSchoolInput.sendKeys("工商管理学院");
