@@ -21,6 +21,7 @@ HomePage.prototype.rechargeLink = element(by.partialLinkText('去充值'));
 HomePage.prototype.openAccountBtn = element(by.id('btnRegAccount'));
 HomePage.prototype.bbsBtn = element(by.css('div#g-nav-bar.g-nav-bar.cf > div.g-nav >ul.nav-c.cf > li.item.item-01.g-forum.fr > a'));
 HomePage.prototype.messageBtn = element(by.css('ul#topLoginState.site-nav-r.fr > li >a.message'));
+HomePage.prototype.popBtn = element(by.id('popbtn'));
 
 
 HomePage.prototype.clickRechargeBtn = function () {
