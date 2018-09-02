@@ -51,9 +51,9 @@ describe(" a case of longin secess",function (){
         letterPage.cashMsgTable.click;
         letterPage.inchargeMsgTable.click;
         letterPage.sysMsgTable.click;
-        if (EC.visibilityOf(letterPage.nextPageBtn)){
+        /*if (EC.visibilityOf(letterPage.nextPageBtn)){
             letterPage.nextPageBtn.click();
-        };
+        }; */
         letterPage.rentMsgTable.click;
         done();
      });
