@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c8d9fde-9821-41d2-a949-1b250fe49f49" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/messageCenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/messageCenter.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="messageCenter.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/messageCenter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="404">
+              <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -37,8 +38,8 @@
       <file leaf-file-name="bbs.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/bbs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="216">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -46,8 +47,8 @@
       <file leaf-file-name="letterPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-framework/pages/letterPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+            <state relative-caret-position="208">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -78,7 +79,7 @@
       <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
+            <state relative-caret-position="675">
               <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
             </state>
           </provider>
@@ -87,7 +88,7 @@
       <file leaf-file-name="global_navigation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/global_navigation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-402">
+            <state relative-caret-position="756">
               <caret line="28" selection-start-line="25" selection-end-line="28" />
             </state>
           </provider>
@@ -96,8 +97,8 @@
       <file leaf-file-name="openAccount.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/openAccount.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-836">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="263">
+              <caret line="52" column="65" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -351,12 +352,13 @@
       <workItem from="1535547840196" duration="5512000" />
       <workItem from="1535633502132" duration="6299000" />
       <workItem from="1535891951174" duration="2433000" />
-      <workItem from="1536068387382" duration="2598000" />
+      <workItem from="1536068387382" duration="2899000" />
+      <workItem from="1536070507200" duration="1083000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224258000" />
+    <option name="totallyTimeSpent" value="225642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
@@ -383,10 +385,10 @@
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3293944" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2984375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -394,12 +396,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.122599706" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3293944" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3293944" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
@@ -657,45 +659,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-framework/pages/letterPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/bbs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="216">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/global_navigation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-402">
+        <state relative-caret-position="756">
           <caret line="28" selection-start-line="25" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
+        <state relative-caret-position="675">
           <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/openAccount.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-836">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="263">
+          <caret line="52" column="65" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-framework/pages/letterPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/messageCenter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="404">
+          <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
         </state>
       </provider>
     </entry>

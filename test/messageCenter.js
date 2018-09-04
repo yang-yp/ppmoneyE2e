@@ -46,8 +46,7 @@ describe(" a case of longin secess",function (){
         /*if (EC.visibilityOf(letterPage.allMsgTable)){
             letterPage.allMsgTable.click();
         };*/
-        letterPage.sleep();
-        letterPage.rentMsgTable.click;
+        //letterPage.rentMsgTable.click;
 
         //letterPage.profitMsgTable.click;
         //letterPage.cashMsgTable.click;
@@ -57,6 +56,7 @@ describe(" a case of longin secess",function (){
             letterPage.nextPageBtn.click();
         }; */
         //letterPage.rentMsgTable.click;
+        expect(letterPage.rentMsgTable.isDisplayed()).toBe(true);
         done();
      });
 });
