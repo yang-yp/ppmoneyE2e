@@ -28,8 +28,8 @@
       <file leaf-file-name="messageCenter.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/messageCenter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+            <state relative-caret-position="260">
+              <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -351,12 +351,12 @@
       <workItem from="1535547840196" duration="5512000" />
       <workItem from="1535633502132" duration="6299000" />
       <workItem from="1535891951174" duration="2433000" />
-      <workItem from="1536068387382" duration="1870000" />
+      <workItem from="1536068387382" duration="2146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223530000" />
+    <option name="totallyTimeSpent" value="223806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
@@ -694,8 +694,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/messageCenter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        <state relative-caret-position="260">
+          <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
         </state>
       </provider>
     </entry>
