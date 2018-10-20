@@ -15,7 +15,10 @@ LetterPage.prototype.inchargeMsgTable = element(by.partialLinkText('充值通知
 LetterPage.prototype.sysMsgTable = element(by.partialLinkText('系统通知'));
 LetterPage.prototype.firstPageBtn = element.all(by.css('div#letterlist > div.pp-pagination-wrap > div.pp-pagination > div.pagination > a.item.item-anti ')).first();
 LetterPage.prototype.lastPageBtn = element.all(by.css('div#letterlist > div.pp-pagination-wrap > div.pp-pagination > div.pagination > a.item.item-anti ')).last();
-LetterPage.prototype.rentMsgTable = element(by.css('div.div2.pp-cont-bd > div.div2_t.cf > ul#inMsg-list-hd.ul1 > li > a.current'));
+LetterPage.prototype.rentMsgTable = element(by.cssContainingText('ul#inMsg-list-hd.ul1 > li > a', "出借通知"));
 //LetterPage.prototype.nextPageBtn = element.all(by.css('div#letterlist > div.pp-pagination-wrap > div.pp-pagination > div.pagination > a.item.item-anti ')).next();
 
+LetterPage.prototype.getLetterTabElement = function(tabString) {
+    return element(by.cssContainingText('ul#inMsg-list-hd.ul1 > li > a', tabString))
+};
 module.exports = LetterPage;

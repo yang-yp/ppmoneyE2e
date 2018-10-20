@@ -46,6 +46,7 @@ describe(" a case of longin secess",function (){
         /*if (EC.visibilityOf(letterPage.allMsgTable)){
             letterPage.allMsgTable.click();
         };*/
+        browser.wait(EC.elementToBeClickable(letterPage.rentMsgTable), timeOut);
         letterPage.rentMsgTable.click;
 
         //letterPage.profitMsgTable.click;
