@@ -20,7 +20,7 @@ exports.config = {
   multiCapabilities:env.multiCapabilities,
 
   jasmineNodeOpts: {
-    defaultTimeoutInterval: 180000,
+    defaultTimeoutInterval: 100000,
     showColors: true
   },
 

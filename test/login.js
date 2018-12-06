@@ -8,27 +8,50 @@
  */
 var EC = protractor.ExpectedConditions;
 var BasePage =require('../test-framework/core/base-page.js');
+var HomePage =require('../test-framework/pages/homePage.js');
+var app = require('../properties/application.js');
 
 describe(" a case of longin secess",function (){
     var basePage = new BasePage();
+    var homePage = new HomePage();
+    var ppMoneyUrl = app.ppmoneyUrl;
+    var userName = app.userName;
+    var userPwd = app.userPwd;
+    var userNum = app.userNum;
 
     beforeAll(function(done){
-    done();
-    });
-    afterAll(function(done){
-     done();
-    });
-    it("user login",function(done){
-        basePage.navigateToURL('https://www.ppmoney.com/');
-        var loginLink = element.all(by.css('ul#topLoginState.site-nav-r.fr > li > a' )).first();
-        var userName =element(by.id('Phone'));
-        var closePopup = element(by.id('popbtn'));
-        if (EC.visibilityOf(closePopup)){
-            closePopup.click();
-        };
-        loginLink.click();
-        expect(userName.isDisplayed()).toBe(true);
-        userName.sendKeys("18919003938")
+        basePage.navigateToURL(ppMoneyUrl);
         done();
     });
+    afterAll(function(done){
+        done();
     });
+    //PP-1
+    it("user login success",function(done){
+        homePage.loginLink.click();
+        homePage.userNameBox.sendKeys(userName);
+        homePage.passWordBox.sendKeys(userPwd);
+        homePage.logInBtn.click();
+        expect(homePage.loginOkLable.getText()).toContain(userNum);
+        homePage.logOutBtn.click();
+        done();
+});
+    //PP-2
+    it("use incorrect user",function(done){
+        homePage.loginLink.click();
+        homePage.userNameBox.sendKeys("13718281991");
+        homePage.passWordBox.sendKeys(userPwd);
+        homePage.logInBtn.click();
+        expect(homePage.loginWarMsg.getText()).toEqual('帐号密码不匹配');
+        done();
+    });
+    //PP-3
+    it("use incorrect password",function(done){
+        homePage.loginLink.click();
+        homePage.userNameBox.sendKeys(userName);
+        homePage.passWordBox.sendKeys("ppmoney110");
+        homePage.logInBtn.click();
+        expect(homePage.loginWarMsg.getText()).toEqual('帐号密码不匹配');
+        done();
+    });
+});

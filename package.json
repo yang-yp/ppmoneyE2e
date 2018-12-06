@@ -4,7 +4,9 @@
   "angular-cli": {},
   "private": true,
   "devDependencies": {
+    "node-gyp": "3.7.0",
     "@types/jasmine": "2.5.38",
+    "cross-env": "^5.2.0",
     "jasmine-allure-reporter": "1.0.1",
     "jasmine-core": "2.5.2",
     "jasmine-reporters": "2.1.1",
